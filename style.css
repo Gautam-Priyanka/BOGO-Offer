@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+/* Main container (outer box) */
+.main-box {
+    width: 462px;
+    height: 603px;
+    display: flex;
+    justify-content: start; 
+    align-items: center; 
+    flex-direction: column; 
+}
+/* Inner container */
+.container {
+    width: 100%;
+    max-width: 343px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+/* Title styling with decorative lines on each side */
+.title {
+    font-size: 1.25rem;
+    color: #ff6B82;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:30px;
+}
+/* Title line decoration */
+.title::after,
+.title::before {
+    content: "";
+    display: block;
+    flex: 1;
+    height: 1px;
+    background-color: #c8c8c8;
+}
+/* General styling for each options box */
+.options {
+    border: 1px solid #c8c8c8;
+    border-radius: 0.9px;
+    padding: 20px;
+    margin: 24px 0px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+/* Styling for select element container */
+.select {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* Custom styling for radio buttons within options */
+.options input[type="radio"] {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Full width for labels in options */
+.option-label {
+    width: 100%;
+}
+/* Radio button styling */
+input[type="radio"] {
+    width: 14.46px;
+    height: 14.46px;
+    border:0.9px solid #FF6B82;
+    border-radius: 50%;
+    accent-color: #ff4d6d;
+    border-color: #c8c8c8;
+    margin-top: 10px;
+}
+
+/* Checked state for radio button */
+input[type="radio"]:checked {
+    background-color: #FF6B82;
+}
+
+.styled-radio {
+    accent-color: #FF6B82;
+    border-color: #c8c8c8;
+}
+.options input[type="radio"] {
+    margin-right: 10px; 
+    transform: translateY(2px); 
+}
+/* Styling for top section in each offer box */
+.unit-box {
+    display: flex;
+    justify-content: space-between;
+}
+/* Description styling for item */
+.description {
+    font-size:12px;
+    color: #000000;
+    margin-top: 5px;
+    font-weight: 400;
+}
+/* Lower section styling for item */
+.lower.bar.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for price alignment in second option */
+.lowertwo {
+    text-align: right;
+}
+/* Styling for the badge on each option */
+.badge {
+    background-color: #FF6B82;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Bold styling for unit text */
+.unit {
+    font-weight: 600;
+    font-size:14px;
+    color: #333;
+}
+
+/* Styling for price text */
+.price {
+    color: #333;
+    font-weight: 500;
+    font-size:14.46px;
+}
+
+/* Styling for original price with strikethrough */
+.original-price {
+    display: block;
+    text-decoration: line-through;
+    font-size: 10px;
+    font-weight: 400;
+    color: #888;
+    margin-top: 4px;
+    margin-right: 23px;
+}
+.options.selected {
+    border: 2px solid #FF6B82;
+    box-shadow: 0 0 8px rgba(255, 107, 130, 0.3);
+    border-radius: 6px;
+}
+
+/* Table styling for size and color selections */
+table {
+    border-spacing: 0 7px;
+}
+
+table th {
+    text-align: left !important;
+    font-weight: 400;
+    font-size: 9.95px;
+    padding-left: 4px;
+}
+
+table td {
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 9.04px;
+}
+
+/* Custom styling for radio buttons within options */
+.options input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Full width for labels in options */
+.option-label {
+    width: 100%;
+}
+
+/* Dropdown styling for size selection */
+select.dropdown {
+    height: 33px;
+    width: 65px;
+    border-color: #D9D9D9;
+    padding: 3px;
+    border-radius: 1.81px;
+    margin-right: 20px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* Dropdown styling for color selection */
+select.dropdown-color {
+    height: 33px;
+    width: 72px;
+    border-color: #D9D9D9;
+    padding: 3px;
+    border-radius: 1.81px;
+    font-size: 10px;
+    font-weight: 400;
+}
+/* hidden section css */
+.selections {
+    display: none; 
+    margin-top: 5px;
+}
+div#hiddenSection2 {
+    display: block;
+}
+.options:nth-child(2) .selections,
+.options:nth-child(3) .selections {
+    margin-left: 25px; 
+}
+
+/* Styling for "Most Popular" tag and container */
+.most-popular {
+    border-color: #c8c8c8;
+    margin-top: 30px;
+}
+
+.ribbon-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.ribbon {
+    position: absolute;
+    top: -33px;
+    left: 50%;
+    transform: translateX(-95%);
+    background: #ff6b81;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 119px;
+    height: 26px;
+}
+
+.ribbon::before, .ribbon::after {
+    content: '';
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border: 8px solid transparent;
+        border-top-color: #0000b0;
+        top: 3px;
+}
+
+.ribbon::before {
+    transform: rotate(-45deg);
+    left: -8px;
+    border-color: #D7445B transparent transparent transparent;
+}
+
+.ribbon::after {
+    transform: rotate(45deg);
+        right: -8px;
+    border-color:  #D7445B transparent transparent transparent;
+}
+span.badge.\33 unit {
+    position: absolute;
+    margin-left: 5px;
+}
+/* Flex styling for top section in the three-unit option */
+.three.bar.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower.three {
+    display: flex;
+}
+
+/* Styling for "Free Delivery" text */
+.free-delivery {
+    color: #FF6B82;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Summary section styling */
+.summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Total price styling */
+.total {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Selected option box styling */
+.options.selected {
+    border: 2px solid #FF6B82;
+    box-shadow: 0 0 8px rgba(255, 107, 130, 0.3);
+    border-radius: 6px;
+}
+
+/* Styling for Add to Cart button */
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF6B82;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px
+}
+
+/* Footer styling */
+footer {
+    text-align: end;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 6px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+}

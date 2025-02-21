@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="main-box">
+        <div class="container">
+            <!-- Title -->
+            <h1 class="title">YAY! It's BOGO</h1>
+                <div class="out-unit-box">
+                    <!-- Option 1 Unit -->
+        <div class="options" id="clickbox">
+            <span class="radiobtn"> <input type="radio" id="one-unit" name="unit-option"  onclick="toggleSection()"></span> <!-- Radio button for selecting -->
+            <label for="one-unit" class="option-label">
+                  <!-- top bar box start here -->
+                <div class="unit-box">
+                    <div class="top bar">
+                        <span class="unit">1 Unit</span> 
+                        <span class="badge">10% Off</span>
+                    </div>
+                    <div class="top bar">
+                        <span class="price">$10.00 USD</span>
+                    </div>
+                </div>
+                  <!-- top bar box end here -->
+                     <!-- lower bar box start here -->
+                <div class="lower bar box">
+                    <div class="description">Standard Price</div> 
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+                 <!-- lower bar box end here -->
+                
+                <!-- Size and Color selection -->
+                <div class="selections" id="hiddenSection">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Size</th> 
+                                <th>Colour</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- dropdown first box start here -->
+                            <tr>
+                                <td>#1</td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-1" class="dropdown"> <!-- dropdown -->
+                                            <option value="">S</option>
+                                            <option value="">M</option>
+                                            <option value="">L</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-2" class="dropdown-color"> <!--  dropdown-->
+                                            <option value="">Black</option>
+                                            <option value="">White</option>
+                                            <option value="">Red</option>
+                                            <option value="">Green</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                             <!-- dropdown second box start here -->
+                            <tr>
+                                <td>#2</td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-1" class="dropdown">
+                                            <option value="">S</option>
+                                            <option value="">M</option>
+                                            <option value="">L</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-2" class="dropdown-color"> 
+                                            <option value="">Colour</option>
+                                            <option value="">White</option>
+                                            <option value="">Red</option>
+                                            <option value="">Green</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </label>
+        </div>
+           <!-- Option 2 Unit (Most Popular) -->
+           <div class="options most-popular selected" >
+        
+            <label for="two-unit" class="option-label">
+                <!-- top bar box start here -->
+                <div class="unit-box">
+                    <div class="top bar second-coupon">
+                       <span class="radiobtn"><input type="radio" id="two-unit" name="unit-option"  onclick="toggleSection2()" checked> </span> 
+                        <span class="unit">2 Unit</span> 
+                        <span class="badge">20% Off</span>
+                    </div>
+                    <div class="top bar">
+                        <span class="price">$18.00 USD</span> 
+                         <!-- lower bar box start here -->
+                <div class="lowertwo">
+                    <span class="original-price">$24.00 USD</span> 
+                </div>
+                <!-- lower bar box end here -->
+                    </div>
+                </div>
+                <!-- top bar box end here -->
+                
+                
+                <!-- Size and Color selection -->
+                <div class="selections mid" id="hiddenSection2">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Size</th> 
+                                <th>Colour</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- dropdown first box start here -->
+                            <tr>
+                                <td>#1</td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-1" class="dropdown"> <!-- dropdown -->
+                                            <option value="">S</option>
+                                            <option value="">M</option>
+                                            <option value="">L</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-2" class="dropdown-color"> <!--  dropdown-->
+                                            <option value="">Black</option>
+                                            <option value="">White</option>
+                                            <option value="">Red</option>
+                                            <option value="">Green</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                             <!-- dropdown second box start here -->
+                            <tr>
+                                <td>#2</td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-1" class="dropdown">
+                                            <option value="">S</option>
+                                            <option value="">M</option>
+                                            <option value="">L</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select">
+                                        <select name="size-select-2" class="dropdown-color"> 
+                                            <option value="">Colour</option>
+                                            <option value="">White</option>
+                                            <option value="">Red</option>
+                                            <option value="">Green</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </label>
+            <div class="ribbon-container">
+                <div class="ribbon">MOST POPULAR</div>
+            </div>
+            
+        </div>
+          <!-- Option 3 Unit -->
+          <div class="options">
+            <label for="three-unit" class="option-label">
+                <div class="three bar box">
+                    <div class="unit-coupon">
+                        <span class="unit">
+                            <span class="radiobtn">  <input type="radio" id="three-unit" name="unit-option" onclick="toggleSection3()"> </span>
+                            3 Unit
+                            <span class="badge 3unit">30% Off</span> 
+                        </span>
+                    </div>
+                    <div class="three-box-price">
+                        <span class="price">$24.00 USD</span> 
+                        <span class="original-price third">$24.00 USD</span> 
+                    </div>
+              
+                </div>
+                    <!-- Size and Color selection -->
+                    <div class="selections" id="hiddenSection3">
+                        <table class="table table-condensed table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Size</th> 
+                                    <th>Colour</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- dropdown first box start here -->
+                                <tr>
+                                    <td>#1</td>
+                                    <td>
+                                        <div class="select">
+                                            <select name="size-select-1" class="dropdown"> <!-- dropdown -->
+                                                <option value="">S</option>
+                                                <option value="">M</option>
+                                                <option value="">L</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="select">
+                                            <select name="size-select-2" class="dropdown-color"> <!--  dropdown-->
+                                                <option value="">Black</option>
+                                                <option value="">White</option>
+                                                <option value="">Red</option>
+                                                <option value="">Green</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <!-- dropdown second box start here -->
+                                <tr>
+                                    <td>#2</td>
+                                    <td>
+                                        <div class="select">
+                                            <select name="size-select-1" class="dropdown">
+                                                <option value="">S</option>
+                                                <option value="">M</option>
+                                                <option value="">L</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="select">
+                                            <select name="size-select-2" class="dropdown-color"> 
+                                                <option value="">Colour</option>
+                                                <option value="">White</option>
+                                                <option value="">Red</option>
+                                                <option value="">Green</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </label>
+            
+        </div>
+         <!-- Summary section with free delivery -->
+         <div class="summary">
+            <p class="free-delivery">Free Delivery</p> 
+            <p class="total">Total : <span>$18.00 USD</span></p> 
+        </div>
+        
+        <!-- Button to add selected items to cart -->
+        <button class="add-to-cart">
+            <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Add to Cart
+        </button>
+        
+        <!-- Footer section -->
+        <footer>
+            <p>&copy Powered by Pumper</p>
+        </footer>
+
+        </div>
+            
+        </div>
+    </section>
+    
+<!-- Link to JavaScript file for interactive functionality -->
+ <script src="style.js"></script>  
+</body>
+</html>
